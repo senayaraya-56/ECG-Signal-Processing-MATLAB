@@ -5,9 +5,9 @@ close all
 %% Senay Araya
 % ECG_Engineering_Project
 
-data1 = readmatrix('e0103.csv');  % change file name as needed
-data2 = readmatrix('e0110.csv');   % change file name as needed
-data3 = readmatrix('e0124.csv');  % change file name as needed
+data1 = readmatrix('data/e0103.csv');  % change file name as needed
+data2 = readmatrix('data/e0110.csv');   % change file name as needed
+data3 = readmatrix('data/e0124.csv');  % change file name as needed
 ecg1 = data1(:,1); %In case the file has multiple columns, It selects the data from the first which is typically the Voltage column.
 ecg2 = data2(:,1);
 ecg3 = data3(:,1);
