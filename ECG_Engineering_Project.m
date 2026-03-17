@@ -17,7 +17,8 @@ fs = 360; % sampling rate (Change if needed)
 for i = 1:n
     ecg = ecg_cell{i};
     t = (0:length(ecg)-1)/fs;
-    figure (2*i-1)
+    figure (i)
+    subplot(2,1,1)
     %Plot the data unfiltered
     plot(t,ecg) 
     xlabel('Time (s)'); ylabel('Amplitude'); title(['Unfiltered ECG signal', num2str(i)])
@@ -27,7 +28,7 @@ for i = 1:n
     ecg_filtered = ecg_filtered(200:end-200); %Since their were a lot of artifact noise at the beginning and end, I those parts of the data out.
 
     %Plot
-    figure (2*i)
+    subplot(2,1,2)
     plot(t,ecg_filtered)
     xlabel('Time (s)'); ylabel('Amplitude'); title(['Filtered ECG Signal',num2str(i)]) 
 
