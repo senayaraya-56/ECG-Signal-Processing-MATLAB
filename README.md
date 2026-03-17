@@ -1,6 +1,7 @@
 # ECG Signal Processing & Analysis Pipeline (MATLAB + SQL)
 
 This project implements a complete ECG data processing pipeline, combining signal processing in MATLAB with structured data analysis using SQL.
+Data Input → Signal Processing → Feature Extraction → Data Storage → SQL Analysis
 
 ## Overview
 The system processes multiple ECG datasets, extracts cardiovascular metrics, stores results in a structured table, and performs higher-level statistical and clinical classification using SQL queries.
