@@ -14,6 +14,10 @@ The system processes multiple ECG datasets, extracts cardiovascular metrics, sto
 - Export of processed results to CSV
 - SQL-based analytical layer for classification and insights
 
+ECG_Engineering_Project.m is the MATLAB code
+SQL_Analysis.t is the SQL code
+Plot's and tables displayed in the output folder, will be from the sample data, from the data folder, 
+
 ## Signal Processing Pipeline (MATLAB)
 1. Import ECG data from CSV files
 2. Apply bandpass filtering
@@ -24,6 +28,7 @@ The system processes multiple ECG datasets, extracts cardiovascular metrics, sto
    - SDNN (Standard Deviation of NN intervals)
    - RMSSD (Root Mean Square of Successive Differences)
    - pNN50
+6. Do an SQL analysis
 
 ## Data Engineering Component
 - Aggregates results from multiple ECG recordings into a single dataset
